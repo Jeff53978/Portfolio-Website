@@ -1,45 +1,94 @@
 <html>
     {% include "head.html" %}
-    <body class="bg-zinc-800 snap-y">
-        <div class="snap-start h-screen bg-zinc-700 bg-no-repeat bg-cover">
-            <div class="h-full flex items-center justify-center relative">
+    <body class="bg-zinc-900">
+        <div class="h-screen bg-zinc-900 relative">
+            <nav class="p-3 px-32 flex items-center justify-between bg-[#0e0e0f]">
+                <h2 class="text-neutral-200 text-4xl" style="font-family: Rubik">snikker.dev</h2>
+                <ul></ul>
+            </nav>
+            <div class="h-full flex items-center pb-64 justify-center">
                 <div class="text-center">
-                    <h1 class="text-9xl antialiased text-neutral-100 tracking-normal" style="font-family: Rubik"><span class="text-gray-400">0x</span>53978</h1>
+                    <h1 class="text-9xl antialiased text-neutral-100 tracking-normal" style="font-family: Rubik">Snikker</h1>
                     <p class="text-neutral-100 text-xl" style="font-family: Rubik">Software Developer • Full Stack Web Developer</p>
-                    <div class="flex justify-center space-x-1 items-center">
-                        <a href="https://github.com/Snikkertjuh" target="_blank">
-                            <img src="/static/img/github_btn.png" width="120">
-                        </a>
-                        <a href="">
-                            <img src="/static/img/discord_btn.png" width="120">
-                        </a>
+                    <div class="flex justify-center space-x-3 mt-2 items-center">
+                        <a href="https://github.com/Snikkertjuh?tab=repositories" target="_blank" class="uppercase hover:bg-[#695ae0] bg-[#5a5ce0] duration-100 py-2 px-3 rounded-md font-semibold text-neutral-100"><i class="fa fa-brands fa-github" aria-hidden="true"></i> Github</a>
+                        <a href="https://discord.com/users/1016016774816342016" target="_blank" class="uppercase hover:bg-[#695ae0] bg-[#5a5ce0] duration-100 py-2 px-3 rounded-md font-semibold text-neutral-100"><i class="fa fa-brands fa-discord" aria-hidden="true"></i> Discord</a>
                     </div>
                 </div>
             </div>
-            <div class="absolute top-0 p-2 flex space-x-2">
-                <div class="bg-zinc-900 flex items-center my-2 space-x-3 text-neutral-200 rounded-md py-2 px-3">
-                    <img src="/static/img/botz.png" width="40">
-                    <h2>Bot Developer ~ 2022</h2>
-                </div>
-                <div class="bg-zinc-900 flex items-center my-2 space-x-3 text-neutral-200 rounded-md py-2 px-3">
-                    <img src="/static/img/eaglecreators.png" width="40">
-                    <h2>Developer ~ 2022</h2>
-                </div>
-                <div class="bg-zinc-900 flex items-center my-2 space-x-3 text-neutral-200 rounded-md py-2 px-3">
-                    <img src="/static/img/xeonpanel2.png" width="40">
-                    <h2>Head Developer ~ 2022</h2>
-                </div>
-                <div class="bg-zinc-900 flex items-center my-2 space-x-3 text-neutral-200 rounded-md py-2 px-3">
-                    <img src="/static/img/xeonnode2.png" width="40">
-                    <h2>Founder ~ 2021</h2>
-                </div>
-            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="absolute bottom-0">
+                <path fill="#5a5ce0" fill-opacity="1" d="M0,128L24,122.7C48,117,96,107,144,128C192,149,240,203,288,192C336,181,384,107,432,69.3C480,32,528,32,576,80C624,128,672,224,720,240C768,256,816,192,864,160C912,128,960,128,1008,122.7C1056,117,1104,107,1152,96C1200,85,1248,75,1296,74.7C1344,75,1392,85,1416,90.7L1440,96L1440,320L1416,320C1392,320,1344,320,1296,320C1248,320,1200,320,1152,320C1104,320,1056,320,1008,320C960,320,912,320,864,320C816,320,768,320,720,320C672,320,624,320,576,320C528,320,480,320,432,320C384,320,336,320,288,320C240,320,192,320,144,320C96,320,48,320,24,320L0,320Z"></path>
+            </svg>
         </div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#5a5ce0" fill-opacity="1" d="M0,160L24,186.7C48,213,96,267,144,261.3C192,256,240,192,288,170.7C336,149,384,171,432,202.7C480,235,528,277,576,277.3C624,277,672,235,720,186.7C768,139,816,85,864,96C912,107,960,181,1008,218.7C1056,256,1104,256,1152,256C1200,256,1248,256,1296,229.3C1344,203,1392,149,1416,122.7L1440,96L1440,0L1416,0C1392,0,1344,0,1296,0C1248,0,1200,0,1152,0C1104,0,1056,0,1008,0C960,0,912,0,864,0C816,0,768,0,720,0C672,0,624,0,576,0C528,0,480,0,432,0C384,0,336,0,288,0C240,0,192,0,144,0C96,0,48,0,24,0L0,0Z"></path></svg>
         <section class="snap-start" id="projects">
-            <div class="mx-48 my-12">
-                <h1 class="text-center text-4xl text-neutral-100 mb-4" style="font-family: Rubik">Mijn projecten</h1>
+            <div class="mx-48 mb-12">
+                <h1 class="text-center text-5xl text-neutral-100 mb-24" style="font-family: Rubik">Mijn projecten</h1>
+                <!-- RozenburgRP Website -->
+                <div class="my-12 flex justify-center w-full animate__animated animate__slideInLeft">
+                    <div class="flex justify-between w-full items-center">
+                        <div class="text-neutral-100 w-1/2">
+                            <div class="flex space-x-8 items-center">
+                                <img src="/static/img/rozenburgrp.png" width="120">
+                                <div class="py-1 px-2 rounded-md text-neutral-200 font-semibold bg-red-500">CLOSED SOURCE</div>
+                            </div>
+                            <p class="text-neutral-300 font-mono mt-4" id="microcord">
+                                RozenburgRP is een FiveM Roleplay server. Dit project gaat open eind September
+                                Er zit ook een Website, Discord bot en MySQL Server bij
+                            </p>
+                            <br>
+                            <div class="mt-5 flex space-x-8 items-center">
+                                <div class="flex items-center space-x-2">
+                                    <img src="/static/img/html.png" width="50">
+                                    <img src="/static/img/tailwind.png" width="50">
+                                    <img src="/static/img/nginx.png" width="50">
+                                    <img src="/static/img/lua.png" width="50">
+                                    <img src="/static/img/fivenm.png" width="50">
+                                    <img src="/static/img/mysql.png" width="50">
+                                    <img src="/static/img/python.png" width="50">
+                                    <img src="/static/img/csharp.png" width="50">
+                                </div>
+                                <div class="flex justify-center items-center">
+                                    <a href="https://discord.gg/sJZA4Gd8Xr" target="_blank" class="uppercase hover:bg-[#695ae0] bg-[#5a5ce0] duration-100 py-2 px-3 rounded-md font-semibold text-neutral-100"><i class="fa fa-brands fa-discord" aria-hidden="true"></i> Discord</a>
+                                </div>
+                            </div>
+                        </div>
+                        <img src="/static/img/rozenburgrp-preview.png" width="700" class="rounded-md shadow-xl">
+                    </div>
+                </div>
+                <!-- End -->
+                <!-- Microcord -->
+                <div class="my-12 flex justify-center w-full animate__animated animate__slideInLeft">
+                    <div class="flex justify-between w-full items-center">
+                        <div class="text-neutral-100 w-1/2">
+                            <div class="flex space-x-8 items-center">
+                                <img src="/static/img/microcord_logo.png" width="300">
+                                <div class="py-1 px-2 rounded-md text-neutral-200 font-semibold bg-green-500">PUBLIC SOURCE</div>
+                            </div>
+                            <p class="text-neutral-300 font-mono mt-4" id="microcord">
+                                Microcord is de enigste Discord API wrapper voor Microcontrollers.
+                                Aangezien er geen websocket modules zijn voor micropython heb ik de RFC 6455 websocket protocol gereverse engineered,
+                                en gemaakt met de ingebouwde socket module.
+
+                                De chip verbindt via de eigen websocket met de discord gateway en om ram te besparen wordt de READY opcode van de gateway niet opgeslagen,
+                                een minimale discord bot kan functioneel draaien op 64kb ram! Dat is ~300x zo efficient als een gemiddelde discord api wrapper.
+
+                                Deze module wordt ondersteund op de RP2040 en ESP32 microcontrollers.
+                            </p>
+                            <br>
+                            <div class="mt-5 flex space-x-8 items-center">
+                                <div class="flex items-center space-x-2">
+                                    <img src="/static/img/micropython.png" width="50">
+                                    <img src="/static/img/python.png" width="50">
+                                </div>
+                            </div>
+                        </div>
+                        <img src="/static/img/rpi_pico.jpeg" width="700" class="rounded-md shadow-xl">
+                    </div>
+                </div>
+                <!-- End -->
                 <!-- Xeonpanel -->
-                <div class="my-12 flex justify-center w-full">
+                <div class="my-12 flex justify-center w-full animate__animated animate__slideInRight">
                     <div class="flex justify-between w-full items-center">
                         <div class="text-neutral-100 w-1/2">
                             <div class="flex space-x-8 items-center">
@@ -66,22 +115,18 @@
                                     <img src="/static/img/docker.png" width="50">
                                     <img src="/static/img/nginx.png" width="50">
                                 </div>
-                                <div class="flex items-center space-x-2">
-                                    <a href="https://github.com/Xeonpanel" target="_blank">
-                                        <img src="/static/img/github_btn.png" width="150">
-                                    </a>
-                                    <a href="https://discord.gg/ABEHpXcmEm" target="_blank">
-                                        <img src="/static/img/discord_btn.png" width="150">
-                                    </a>
+                                <div class="flex justify-center space-x-3 items-center">
+                                    <a href="https://github.com/Xeonpanel" target="_blank" class="uppercase hover:bg-[#695ae0] bg-[#5a5ce0] duration-100 py-2 px-3 rounded-md font-semibold text-neutral-100"><i class="fa fa-brands fa-github" aria-hidden="true"></i> Github</a>
+                                    <a href="https://discord.gg/ABEHpXcmEm" target="_blank" class="uppercase hover:bg-[#695ae0] bg-[#5a5ce0] duration-100 py-2 px-3 rounded-md font-semibold text-neutral-100"><i class="fa fa-brands fa-discord" aria-hidden="true"></i> Discord</a>
                                 </div>
                             </div>
                         </div>
-                        <img src="/static/img/preview_xeonpanel_1.png" width="700" class="rounded-md shadow-xl">
+                        <img src="/static/img/xeonnode-preview-2.png" width="700" class="rounded-md shadow-xl">
                     </div>
                 </div>
                 <!-- End -->
                 <!-- Xeonnode -->
-                <div class="my-12 flex justify-center w-full">
+                <div class="my-12 flex justify-center w-full animate__animated animate__slideInLeft">
                     <div class="flex justify-between w-full items-center">
                         <div class="text-neutral-100 w-1/2">
                             <div class="flex space-x-8 items-center">
@@ -107,7 +152,7 @@
                 </div>
                 <!-- End -->
                 <!-- Flaskdrive -->
-                <div class="my-12 flex justify-center w-full pb-12">
+                <div class="my-12 flex justify-center w-full pb-12 animate__animated animate__slideInRight">
                     <div class="flex justify-between w-full items-center">
                         <div class="text-neutral-100 w-1/2">
                             <div class="flex space-x-8 items-center">
@@ -133,7 +178,7 @@
                 </div>
                 <!-- End -->
                 <!-- Imagescreen Server -->
-                <div class="my-12 flex justify-center w-full pb-12">
+                <div class="my-12 flex justify-center w-full pb-12 animate__animated animate__slideInLeft">
                     <div class="flex justify-between w-full items-center">
                         <div class="text-neutral-100 w-1/2">
                             <div class="flex space-x-8 items-center">
@@ -159,10 +204,19 @@
                 <!-- End -->
             </div>
         </section>
-        <footer class="bg-zinc-900 space-x-2 text-center justify-center text-neutral-100 flex items-center p-3">
-            <h2>0x53978</h2>
-            <a href="mailto:snikkerzakelijk@gmail.com" class="text-blue-600">Contact</a>
-            <a href="https://github.com/Snikkertjuh?tab=repositories" target="_blank" class="text-blue-600">Github</a>
+        <footer class="bg-[#0e0e0f] text-center justify-between px-20 text-neutral-100 flex items-center py-3">
+            <div class="flex items-center space-x-2">
+                <img src="/static/img/botz.png" width="50" height="50">
+                <img src="/static/img/eaglecreators.png" width="50" height="50">
+                <img src="/static/img/234.png" width="50" height="50">
+                <img src="/static/img/xeonnode2.png" width="50" height="50">
+                <img src="/static/img/xeonpanel2.png" width="50" height="50">
+            </div>
+            <div class="flex justify-center space-x-3 items-center">
+                <a href="https://github.com/Snikkertjuh?tab=repositories" target="_blank" class="uppercase hover:bg-[#695ae0] bg-[#5a5ce0] duration-100 py-2 px-3 rounded-md font-semibold text-neutral-100"><i class="fa fa-brands fa-github" aria-hidden="true"></i> Github</a>
+                <a href="mailto:snikkerzakelijk@gmail.com" target="_blank" class="uppercase hover:bg-[#695ae0] bg-[#5a5ce0] duration-100 py-2 px-3 rounded-md font-semibold text-neutral-100"><i class="fa fa-envelope" aria-hidden="true"></i> Contact</a>
+                <a href="https://discord.com/users/1016016774816342016" target="_blank" class="uppercase hover:bg-[#695ae0] bg-[#5a5ce0] duration-100 py-2 px-3 rounded-md font-semibold text-neutral-100"><i class="fa fa-brands fa-discord" aria-hidden="true"></i> Discord</a>
+            </div>
         </footer>
     </body>
 </html>
