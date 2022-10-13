@@ -1,0 +1,10 @@
+version: "3"
+
+services:
+  website:
+      build: .
+      ports:
+        - 5006:5006
+      volumes:
+        -  .:/usr/src/app
+      restart: always
